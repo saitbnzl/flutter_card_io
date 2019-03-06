@@ -41,7 +41,7 @@
     if ([@"scanCard" isEqualToString:call.method]) {
         _scanViewController.delegate = self;
         
-        _result = result;
+        _result = nil;
         _arguments = call.arguments;
         
         _scanViewController.scanExpiry = [_arguments objectForKey:@"scanExpiry"] ? [[_arguments objectForKey:@"scanExpiry"] boolValue] : false;
